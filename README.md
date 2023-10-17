@@ -149,7 +149,6 @@ Feel free to check the [issues page](https://github.com/beteland123/smart_budget
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 - I would like to thank Microverse for the great project idea. ❤️
-- Credit goes to [Gregoire Vella on Behance](https://www.behance.net/gregoirevella) whose original design was used.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

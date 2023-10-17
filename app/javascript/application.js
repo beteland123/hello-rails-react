@@ -1,15 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter  } from 'react-router-dom';
 import App from './components/App';
 import store from './redux/store';
 
-document.addEventListener("DOMContentLoaded", () => {
-  ReactDOM.render(
-    <Provider store={store}>
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <Provider store={store}>
+    <BrowserRouter>
       <App />
-    </Provider>,
-    document.getElementById("root")
-  );
-});
+    </BrowserRouter>
+    ,
+  </Provider>,
+);

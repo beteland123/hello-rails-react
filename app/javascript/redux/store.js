@@ -3,7 +3,7 @@ import greattingReducer from './greeting/greettingSlice';
 
 const store = configureStore({
   reducer: {
-    greatting: greattingReducer,
+    greetings: greattingReducer,
   },
 });
 

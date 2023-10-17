@@ -11,7 +11,7 @@ export const fetchGreeting = createAsyncThunk('greeting/getGreeting', async () =
 });
 
 const initialState = {
-  greeting: null, 
+  greeting: [], 
 };
 
 const greetingSlice = createSlice({

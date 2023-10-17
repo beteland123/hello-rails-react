@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { getGreeting,fetchGreeting } from '../redux/greeting/greettingSlice';
+import { fetchGreeting, getGreeting } from '../redux/greeting/greettingSlice';
 
 const Greeting = () => {
-   const dispatch = useDispatch();
-   const greeting = useSelector(getGreeting);
+  const dispatch = useDispatch();
+  const greeting = useSelector(getGreeting);
+
   useEffect(() => {
     dispatch(fetchGreeting());
   }, [dispatch]);
@@ -12,7 +13,7 @@ const Greeting = () => {
   return (
     <div>
       <h1>Random Greeting</h1>
-      <p>{greeting}</p>
+      {greeting && <p>{greeting}</p>} 
     </div>
   );
 };
